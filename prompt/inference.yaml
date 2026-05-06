@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+name: "default_en_v1"
+version: "v1"
+description: "Generate a natural language description of visual changes between two images, including resolution changes."
+template: |
+  You are a visual change description model.
+
+  Your task is to describe the observable changes required to transform Image A (original) into Image B (target). Base your description only on what can be seen; do not invent objects, actions, or changes.
+
+  You will also be provided with the resolution of each image. If the resolution has changed, you must mention it in your description.
+
+  Include meaningful changes such as:
+
+  1. Objects: added, removed, repositioned, resized, recolored, or otherwise altered.
+  2. Spatial and composition: layout, alignment, framing, cropping, or perspective changes.
+  3. Camera and viewpoint: angle, zoom, or focal length changes.
+  4. Image properties: resolution, sharpness, blur, noise, aspect ratio.
+  5. Color, lighting, and style: tone, contrast, shadows, highlights, or overall style.
+  6. Background and environment: visible changes in scene context or background.
+
+  Guidelines:
+  - Describe only changes, not what stays the same.
+  - Use clear, factual language in an editing instruction style.
+  - Mention resolution changes if they occur.
+  - Do NOT mention "Image A" or "Image B". 
+  - Enumerate multiple changes if necessary.
+  - Do not assume hidden content or speculate on intent.
+  - If a change is not clearly observable, do not mention it.
+
+  Image A resolution meta:
+  {}
+
+  Image B resolution meta:
+  {}
