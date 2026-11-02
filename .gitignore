@@ -2,3 +2,7 @@ __pycache__/
 *.py[cod]
 score_results/
 .DS_Store
+/images/
+/Result/
+/outputs/
+/.cache/huggingface/
